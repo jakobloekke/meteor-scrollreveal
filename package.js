@@ -1,6 +1,6 @@
 Package.describe({
   name: 'warrenmcquinn:meteor-scrollreveal',
-  version: '1.0.0',
+  version: '1.0.1',
   // Brief, one-line summary of the package.
   summary: 'scrollReveal.js packaged for Meteor. Reveals elements using natural language keywords.',
   // URL to the Git repository containing the source code for this package.
@@ -13,6 +13,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
   api.addFiles('scrollReveal.js');
+  api.addFiles('export.js');
 });
 
 Package.onTest(function(api) {
