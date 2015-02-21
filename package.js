@@ -1,10 +1,10 @@
 Package.describe({
   name: 'warrenmcquinn:meteor-scrollreveal',
-  version: '0.0.1',
+  version: '1.0.0',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'scrollReveal.js packaged for Meteor. scrollReveal.js is an open-source project by Julian Lloyd that reveals elements as they enter the viewport using natural language keywords as data-sr attributes.',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/warrenmcquinn/meteor-scrollreveal.git',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -12,11 +12,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
-  api.addFiles('warrenmcquinn:meteor-scrollreveal.js');
+  api.addFiles('scrollReveal.js');
 });
 
 Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('warrenmcquinn:meteor-scrollreveal');
-  api.addFiles('warrenmcquinn:meteor-scrollreveal-tests.js');
 });
