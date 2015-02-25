@@ -1,2 +1,3 @@
-scrollReveal = this.scrollReveal;
-delete this.scrollReveal;
+window.onload = function () {
+    window.sr = new scrollReveal();
+};

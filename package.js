@@ -12,8 +12,8 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0.3.1');
-  api.addFiles('scrollReveal.js');
-  api.addFiles('export.js');
+  api.addFiles('scrollReveal.js', 'client');
+  api.addFiles('export.js', 'client');
 });
 
 Package.onTest(function(api) {
